@@ -27,7 +27,7 @@ jobs:
   mvn-snapshot-deploy:
     uses: netcracker/qubership-workflow-hub/.github/workflows/re-maven-snapshot-deploy.yaml@fix/maven-snapshots-deploy
     with:
-      java-version: "8"
+      java-version: "21"
       additional-mvn-args: "-Pgithub -Dgpg.skip=true"
       target-store: "github-packages"
     secrets:
